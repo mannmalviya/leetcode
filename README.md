@@ -8,4 +8,4 @@
   </a>
 </div>
 
-I prefer solving LeetCode problems locally using my own editor. This repo contains all my submissions.
+I prefer solving LeetCode problems locally using my own editor. This repo contains a record of all my submissions.
