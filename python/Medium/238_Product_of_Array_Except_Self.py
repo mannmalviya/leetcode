@@ -11,7 +11,7 @@ Thought Process:
 - I looked at hint 1 on Leetcode (which actually happened to be hint3 on neetcode:/) which gave away the main idea of maintaining a prefix and sufix products to avoid recomputation. Once I understood this hint I was very quickly able to write the pseudo code and then the actual solution which passes.
 
 Notes:
-- 7th NeetCode150 Problem
+- 7th NeetCode150 Problem under: Arrays & Hashing
 """
 
 from typing import List

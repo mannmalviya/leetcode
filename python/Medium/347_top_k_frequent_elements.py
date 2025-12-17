@@ -10,7 +10,7 @@ Thought Process:
 - see below.
 
 Notes:
-- 5th Problem in Neetcode150
+- 5th Problem in Neetcode150 under: Arrays & Hashing
 """
 
 from typing import List

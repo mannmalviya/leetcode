@@ -13,7 +13,7 @@ Thought Process:
 - The key hint that I needed to go from O(n^2) -> O(n) time complexity was to realize that a number is the start of a sequence only if num-1 doesn't exist in the list nums, and when implementing this u have to make sure to use a set because checking membership in a set is O(1) while checking in a list is O(n).
 
 Notes:
-- 9th NeetCode150 problem
+- 9th NeetCode150 problem under: Arrays & Hashing
 """
 
 from typing import List

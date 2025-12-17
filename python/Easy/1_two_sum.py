@@ -11,7 +11,7 @@ Thought Process:
 
 Notes:
 - Humble beginnings. Resolved this, I think I've done this 2-3times in the pasts.
-- 3rd prblm in Neetcode150
+- 3rd prblm in Neetcode150 under: Arrays & Hashing
 - Michael was the one to explain the O(n) solution to me a while back. I was only able to find O(n^2) brute force solution by myself.
 """
 

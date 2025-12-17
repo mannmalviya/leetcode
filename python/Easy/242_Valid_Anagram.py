@@ -10,7 +10,7 @@ Thought Process:
 
 Notes:
 - Resolved this.
-- 2nd Neetcode150 prblm
+- 2nd Neetcode150 prblm under: Arrays & Hashing
 """
 
 class Solution:

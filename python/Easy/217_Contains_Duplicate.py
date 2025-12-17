@@ -15,7 +15,7 @@ Space Comp.: O(1) or O(n) depending on the sorting algo.
 Notes:
 - Resolved this very intro basic problem. 
 - This is the first problem in the Neetcode150 roadmap! Starting this roadmap today. 
-- 1st Neetcode150 prblm.
+- 1st Neetcode150 prblm. under: Arrays & Hashing
 """
 
 from typing import List

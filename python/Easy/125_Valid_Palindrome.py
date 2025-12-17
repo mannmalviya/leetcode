@@ -7,19 +7,19 @@ Link:
 Date Solved: 15th December, 2025
 
 Thought Process: 
--
+- See function comments
 
 Notes:
 - First problem under Two Pointers in NeetCode150
-- 10th problem of NeetCode150
+- 1st problem of NeetCode150 under: Two Pointers
 """
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         """
-            This was my initial implementation
-
-            <WRITE MORE>
+            - This was my initial implementation
+            - The first for loop removes all the non-alphanumeric characters from the input string s.
+            - In the second for loop, the str is traversed from both sides, the start and end, and each corresponding character is checked to be the same, if not return False as the str is not a palindrome
 
             Time Complexity: O(n)
             Space Complexity: O(1) extra space, O(n) space for the output
