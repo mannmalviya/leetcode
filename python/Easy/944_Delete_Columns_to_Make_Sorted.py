@@ -4,7 +4,7 @@ Link:
 - https://leetcode.com/problems/delete-columns-to-make-sorted/description/?envType=daily-question&envId=2025-12-20
 
 Date Solved: 20th December, 2025
-Total Time Spent: 
+Total Time Spent: 50mins
 
 Thought Process: 
 - See below function comments
@@ -16,7 +16,7 @@ Notes:
 from typing import List
 
 class Solution:
-    def minDeletionSize(self, strs: List[str]) -> int:
+    def minDeletionSize1(self, strs: List[str]) -> int:
         """
             - After looking at one of the solns, I removed the sorting each column to check if the column is in lexicographic order which was taking nlogn time to just checking if the next char is greater than the prev char(defn of lexicographic order), this hence takes O(n) time.
 
@@ -43,6 +43,20 @@ class Solution:
                     break
             
         return count
+
+    def minDeletionSize2(self, strs: List[str]) -> int:
+        """
+
+            - Try a solution where you don't need to store the columns, and instead just traverse the input strs wrt a column instead of the normal row traversal.
+        
+        
+            Time Complexity:
+            Space Complexity: O(1) extra space
+        """
+
+        # TODO
+
+        return
 
     def minDeletionSize_my_sol(self, strs: List[str]) -> int:
         """
