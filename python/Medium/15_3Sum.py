@@ -12,6 +12,7 @@ Thought Process:
 
 Notes:
 - Spent days on this question, my brain just cannot understand it. Defeated I shall take a break from it and come back to it at a later time! - 20th Dec 2025
+- NeetCode150 problem 3 under Two Pointers
 """
 
 from typing import List

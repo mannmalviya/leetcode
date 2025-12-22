@@ -5,13 +5,13 @@ Link:
 - https://leetcode.com/problems/container-with-most-water/description/
 
 Date Solved: 20th December, 2025
-Total Time Spent: 50mins+
+Total Time Spent: 50mins+45mins
 
 Thought Process: 
--
+- See below function comments
 
 Notes:
-- Spent days on this question, my brain just cannot understand it. Defeated I shall take a break from it and come back to it at a later time! - 20th Dec 2025
+- NeetCode150 problem 4 under Two Pointers
 """
 
 from typing import List
@@ -19,11 +19,43 @@ from typing import List
 class Solution():
     def maxArea(self, height: List[int]) -> int:
         """
+            - Basically had to read all NeetCode hints to be able to do this one
+            - We implement the 2 pointer solution, where we maintain one pointer at the start of the inp list `height` and one at the end, we reduce only the pointer which has a lower height as only the lower height out of the two line heights actually contributes to the total area of water contained.
         
-            Time Complexity: O()
-            Space Complexity: O()
-        """
-        pass
+            Time Complexity: O(n)
+            Space Complexity: O(1)
+        """ 
+        def amt_water(h1, i1, h2, i2):
+            """
+                function to calculate the amount of water when we fix two heights
+            """
+            if i1 > i2:
+                b = i1 - i2
+            else:
+                b = i2 - i1
+            
+            if h1 > h2:
+                h = h2
+            else:
+                h = h1
+
+            return b*h
+
+        max_area = 0
+
+        p1 = 0
+        p2 = len(height) - 1
+
+        while(p1 < p2):
+            area = amt_water(height[p1], p1, height[p2], p2)
+            if area > max_area:
+                max_area = area
+            if height[p1] > height[p2]:
+                p2 -= 1
+            else:
+                p1 +=1
+
+        return max_area
     
     def BruteForce(self, height: List[int]) -> int:
         """
@@ -37,6 +69,7 @@ class Solution():
         """
         def amt_water(h1, i1, h2, i2):
             """
+                function to calculate the amount of water when we fix two heights
             """
             if i1 > i2:
                 b = i1 - i2
@@ -68,6 +101,7 @@ class Solution():
         """
         def amt_water(h1, i1, h2, i2):
             """
+                function to calculate the amount of water when we fix two heights
             """
             if i1 > i2:
                 b = i1 - i2
@@ -94,7 +128,7 @@ class Solution():
 def main():
     ans_obj = Solution()
 
-    print(ans_obj.BruteForce([1,8,6,2,5,4,8,3,7]))
+    print(ans_obj.maxArea([1,8,6,2,5,4,8,3,7]))
 
     return
 
