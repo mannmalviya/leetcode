@@ -11,6 +11,7 @@ Thought Process:
 
 Notes:
 - Random Easy problem
+- Also solved this problem in C++ for practice, there wasn't a significant improvement in either the runtime or memory :/
 """
 
 from typing import List
