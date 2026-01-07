@@ -24,7 +24,7 @@ class TreeNode:
         self.right = right
 
 class Solution:
-    def maxLevelSum(self, root: Optional[TreeNode]) -> int:
+    def maxLevelSum_recursive_DFS(self, root: Optional[TreeNode]) -> int:
         """
         - 
 
@@ -57,3 +57,32 @@ class Solution:
                 max_sum = sum_map[lvl]
 
         return max_lvl
+    
+    def maxLevelSum_iterative_DFS(self, root: Optional[TreeNode]) -> int:
+        """
+            -
+
+            Time Complexity: O()
+            Space Complexity: O()
+        """
+        stack = [(root, 1)]
+        lvl_sum_map = {}
+
+        while len(stack) != 0:
+            node, lvl = stack.pop(0)
+            if node:
+                lvl_sum_map[lvl] = node.val + lvl_sum_map.get(lvl, 0)
+                lvl+=1
+                stack.insert(0, (node.right, lvl))
+                stack.insert(0, (node.left, lvl))
+
+        max_sum = lvl_sum_map[1]
+        max_lvl = 1
+
+        for lvl in lvl_sum_map:
+            if max_sum < lvl_sum_map[lvl]:
+                max_sum = lvl_sum_map[lvl]
+                max_lvl = lvl
+
+        return max_lvl
+
