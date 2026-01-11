@@ -4,14 +4,16 @@ Link:
 - https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/?envType=daily-question&envId=2026-01-07
 
 Date Solved: Jan 6th, 2026
-Total Time Spent: >2hrs probably less than 3hrs?
+Total Time Spent: >2hrs probably and less than 3hrs
 
 Thought Process: 
 - Look at function comments below
 
 Notes:
 - Daily Challenge problem
-
+- I ended up looking at the hints but I already knew what the hint was saying.
+- I then out of frustatratyion put my code in to leet(the llm given by leetcode) and asked it why my code was timing out
+- It told me something I already knew, I needed to maintain a way to store the sum of each subtree just once and not compute the sum of each subtree multiple times.
 """
 
 from typing import Optional, List
