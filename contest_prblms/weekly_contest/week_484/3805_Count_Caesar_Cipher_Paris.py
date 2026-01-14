@@ -49,4 +49,11 @@ class Solution:
                     ans += 1
         return ans
         
+    def countPairs(self, words: List[str]) -> int:
+        """
         
+            Time Complexity: O()
+            Space Complexity: O()
+        """
+        
+        return
