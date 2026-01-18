@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://leetcode.com/lvl12-Tensor-Boi">
-    <img src="https://leetcode.card.workers.dev/?username=lvl12-Tensor-Boi&theme=dark" alt="LeetCode Stats">
+    <img src="https://leetcard.jacoblin.cool/lvl12-Tensor-Boi?theme=dark" alt="LeetCode Stats">
   </a>
 </div>
 
