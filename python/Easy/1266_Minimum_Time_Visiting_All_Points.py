@@ -1,10 +1,9 @@
-
 """
 LeetCode Problem: 1266. Minimum Time Visiting All Points
 Link:
 - https://leetcode.com/problems/minimum-time-visiting-all-points/?envType=daily-question&envId=2026-01-12
 
-Date Solved: Jan 12th, 2026
+Date Solved: Jan 14th, 2026
 Total Time Spent: 25 mins + 16mins
 
 Thought Process: 
@@ -13,6 +12,7 @@ Thought Process:
 
 Notes:
 - Daily Challenge problem
+- The official editorial solution was very similar to my implementation. The key idea of maximizing the time spent moving diagonally is the same.
 """
 
 
